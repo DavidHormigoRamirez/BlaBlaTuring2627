@@ -1,5 +1,5 @@
 """
-URL configuration for BlaBlaTuring project.
+URL configuration for config project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.1/topics/http/urls/
@@ -15,9 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
+<<<<<<< HEAD:config/urls.py
+    path('admin/', admin.site.urls)
+=======
     path('admin/', admin.site.urls),
     path('route/', admin.site.urls),
+>>>>>>> d740b7b8cdb8fcc9cb9841e9b45a2b1e86eaeda7:BlaBlaTuring/urls.py
 ]
