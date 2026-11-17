@@ -38,12 +38,11 @@ class User(AbstractUser):
         return self.email
 
 
-class administration:
+class Administration:
     pass
 
-class teacher:
+class Teacher:
     pass
 
-class student:
+class Student:
     pass
-
