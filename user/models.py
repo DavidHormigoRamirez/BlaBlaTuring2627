@@ -30,3 +30,14 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.email
+
+
+class administration:
+    pass
+
+class teacher:
+    pass
+
+class student:
+    pass
+
