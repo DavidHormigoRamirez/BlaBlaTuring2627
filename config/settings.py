@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'incidents.apps.IncidentsConfig',
     'routes.apps.RoutesConfig',
     'user.apps.UserConfig',
+    'gestion_espacios',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
