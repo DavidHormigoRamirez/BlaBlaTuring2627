@@ -27,6 +27,22 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     objects = UserManager()
     REQUIRED_FIELDS = []
+    STUDENT_TYPE = {
+        ("TC", "Teacher"),
+        ("ST", "Student"),
+        ("AD", "Administration"),
+    }
+    student_type = models.CharField(max_length=2, choices=STUDENT_TYPE)
 
     def __str__(self):
         return self.email
+
+
+class Administration:
+    pass
+
+class Teacher:
+    pass
+
+class Student:
+    pass
