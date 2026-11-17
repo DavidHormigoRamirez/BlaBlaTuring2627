@@ -1,5 +1,5 @@
 from django.contrib import admin
+from .models import Route
 
 # Register your models here.
-
-# Buenos dias
+admin.site.register(Route)
