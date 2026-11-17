@@ -7,6 +7,3 @@ class Booking(models.Model):
 
     # Relación usuario
     # Relación Vehículo
-
-    description = models.CharField(max_length=100)
-    active = models.BooleanField()
