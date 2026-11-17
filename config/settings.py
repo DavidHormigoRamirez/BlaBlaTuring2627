@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'bookeings.apps.BookeingsConfig',
     'routes.apps.RoutesConfig',
     'user.apps.UserConfig',
-    'gestion_espacios',
+    'gestion_espacios.apps.GestionEspaciosConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
