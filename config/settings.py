@@ -32,6 +32,7 @@ AUTH_USER_MODEL="user.User"
 
 # Application definition
 INSTALLED_APPS = [
+    'incidents.apps.IncidentsConfig',
     'routes.apps.RoutesConfig',
     'user.apps.UserConfig',
     'django.contrib.admin',
