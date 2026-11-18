@@ -4,3 +4,4 @@ from .models import Booking
 admin.site.register(Booking)
 
 # Register your models here.
+#esto es una prueba
