@@ -9,4 +9,4 @@ from .models import User
 class UserListView(ListView):
     model = User
     template_name = 'user/user_list.html'
-    context_object_name = 'usuarios'
+    context_object_name = 'users'

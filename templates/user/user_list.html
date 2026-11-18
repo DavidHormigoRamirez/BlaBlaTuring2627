@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lista de usuarios</title>
+    <title>List users</title>
 </head>
 <body>
 
-    <h1>Lista de usuarios</h1>
+    <h1>List users</h1>
 
-    {% for usuario in usuarios %}
-        <p>
-            Email: {{ usuario.email }}
-            - Tipo: {{ usuario.get_student_type_display }}
-        </p>
+    {% for user in users %}
+        <p>{{ user.email }}</p>
     {% empty %}
-        <p>No hay usuarios registrados.</p>
+        <p>There are no users</p>
     {% endfor %}
 
 </body>
