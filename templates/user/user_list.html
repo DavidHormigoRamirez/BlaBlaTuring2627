@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de usuarios</title>
+</head>
+<body>
+
+    <h1>Lista de usuarios</h1>
+
+    {% for usuario in usuarios %}
+        <p>
+            Email: {{ usuario.email }}
+            - Tipo: {{ usuario.get_student_type_display }}
+        </p>
+    {% empty %}
+        <p>No hay usuarios registrados.</p>
+    {% endfor %}
+
+</body>
+</html>
