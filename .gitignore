@@ -18,6 +18,7 @@ media
 .idea/**/shelf
 .idea/misc.xml,
 .idea/jsLibraryMappings.xml
+.idea/BlaBlaTuring.iml
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -33,7 +34,7 @@ media
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-
+.idea
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -130,3 +131,12 @@ Control.ca-list
 Control.ca-bundle
 Control.system-ca-bundle
 GitHub.sublime-settings
+
+# Migrations
+/bookings/migrations/
+/routes/migrations/
+/user/migrations/
+/incidents/migrations/
+/gestion_espacios/migrations/
+/.idea
+

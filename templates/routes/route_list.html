@@ -1,0 +1,8 @@
+<h1>Routes</h1>
+<ul>
+{% for route in object_list %}
+    <li>{{ route.description }} is {{ route.active }}</li>
+{% empty %}
+    <li>No routes yet.</li>
+{% endfor %}
+</ul>
