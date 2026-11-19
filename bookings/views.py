@@ -1,6 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import *
+from django.views.generic.list import ListView
+
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<html><head><title>Bookings Page</title></head><body><h1>Bookings page</h1></body></html>")
+    pass
+
+class BookingListView(ListView):
+    model = Booking
