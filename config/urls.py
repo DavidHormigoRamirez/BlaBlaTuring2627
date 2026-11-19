@@ -23,4 +23,8 @@ urlpatterns = [
     path(route='',view=views.index,name="index"),
     path('admin/', admin.site.urls),
     path('routes/', include('routes.urls')),
+    path('bookings/', include('bookings.urls')),
+]
+    path('incidents/', include('incidents.urls')),
+
 ]
