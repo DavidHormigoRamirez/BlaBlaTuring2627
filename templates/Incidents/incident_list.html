@@ -1,0 +1,8 @@
+<h1>Incidents</h1>
+<ul>
+{% for incident in object_list %}
+    <li>{{ incident.subject }} | {{ incident.description }} | {{ incident.severity }} | {{ incident.status }} | {{ incident.creation_date }} | {{ incident.finish_date }}</li>
+{% empty %}
+    <li>No incidents yet. Thanks :)</li>
+{% endfor %}
+</ul>
