@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>List users</title>
-</head>
-<body>
-
-    <h1>List users</h1>
-
-    {% for user in users %}
-        <p>{{ user.email }}</p>
-    {% empty %}
-        <p>There are no users</p>
-    {% endfor %}
-
-</body>
-</html>
+<h1>User</h1>
+<ul>
+{% for user in object_list %}
+    <li>{{ user.last_login }} | {{ user.is_superuser }} | {{ user.email }}</li>
+{% empty %}
+    <li>No user yet.</li>
+{% endfor %}
+</ul>
