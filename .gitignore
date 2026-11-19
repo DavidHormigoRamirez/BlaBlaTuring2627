@@ -133,3 +133,12 @@ Control.ca-list
 Control.ca-bundle
 Control.system-ca-bundle
 GitHub.sublime-settings
+
+# Migrations
+/bookeings/migrations/
+/routes/migrations/
+/user/migrations/
+/incidents/migrations/
+/gestion_espacios/migrations/
+/.idea
+
