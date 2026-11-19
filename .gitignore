@@ -16,10 +16,12 @@ media
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-.idea/misc.xml,
+.idea/misc.xml
+.idea/modules.xml
 .idea/jsLibraryMappings.xml
 .idea/BlaBlaTuring.iml
-
+.idea/
+uv.lock
 # AWS User-specific
 .idea/**/aws.xml
 
