@@ -1,0 +1,14 @@
+<h1>Space Availability</h1>
+
+<ul>
+{% for availability in object_list %}
+    <li>
+        {{ availability.zone.zone_type }} |
+        {{ availability.start_time }} |
+        {{ availability.end_time }} |
+        {{ availability.free_spaces }}
+    </li>
+{% empty %}
+    <li>No space availability yet.</li>
+{% endfor %}
+</ul>
