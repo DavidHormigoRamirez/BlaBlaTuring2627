@@ -32,6 +32,7 @@ AUTH_USER_MODEL="user.User"
 
 # Application definition
 INSTALLED_APPS = [
+    'bookings.apps.BookingsConfig',
     'incidents.apps.IncidentsConfig',
     'bookeings.apps.BookeingsConfig',
     'space_management.apps.SpaceManagementConfig',

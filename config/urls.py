@@ -18,9 +18,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from config import views
+
 urlpatterns = [
+    path(route='',view=views.index,name="index"),
     path('admin/', admin.site.urls),
     path('routes/', include('routes.urls')),
-    path('', include('space_management.urls')),
+    path('bookings/', include('bookings.urls')),
+]
+    path('incidents/', include('incidents.urls')),
+
 ]
 
