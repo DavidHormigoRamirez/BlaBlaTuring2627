@@ -1,6 +1,24 @@
-{% <extends "base.html" %}
-{ % block content % }
-
-<p>Booking ID: {{ booking.id }} | ReserveHour: {{ booking.ReserveHour }} | Active: {{ booking.active }}</p>
-
-{% endblock % }
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title">Booking {{ booking.id }}</p>
+        <span class="card-header-icon">
+          {% if booking.active %}
+            <span class="tag is-success">Active</span>
+          {% else %}
+            <span class="tag is-danger">Inactive</span>
+          {% endif %}
+        </span>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p><strong>Reserve hour:</strong> {{ booking.ReserveHour }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

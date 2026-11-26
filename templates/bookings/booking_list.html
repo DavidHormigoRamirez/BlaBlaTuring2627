@@ -1,9 +1,16 @@
-
-<h1>Booking</h1>
-<ul>
-{% for booking in object_list %}
-    <li><a href="./{{ booking.id }}"> Booking {{ booking.id }}</a></li>
-{% empty %}
-    <li>No bookings yet.</li>
-{% endfor %}
-</ul>
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1 class="title">Bookings</h1>
+    <nav class="panel is-link">
+      <p class="panel-heading">List of Bookings</p>
+      {% for booking in object_list %}
+        <a class="panel-block" href="./{{ booking.id }}">Booking {{ booking.id }}</a>
+      {% empty %}
+        <p class="panel-block">No bookings yet.</p>
+      {% endfor %}
+    </nav>
+  </div>
+</section>
+{% endblock %}
