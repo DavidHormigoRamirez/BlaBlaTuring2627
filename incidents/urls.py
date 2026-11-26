@@ -4,5 +4,5 @@ from .views import IncidentsDetailView
 
 urlpatterns = [
     path('', IncidentsListView.as_view(),name='incident-list'),
-    path('/<int:id>/', IncidentsDetailView.as_view(),name='incidentDetail-list'),
+    path('<int:pk>/', IncidentsDetailView.as_view(),name='incidentDetail-list'),
 ]

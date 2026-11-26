@@ -1,7 +1,7 @@
 <h1>Incidents</h1>
 <ul>
 {% for incident in object_list %}
-    <li><a href="{% url 'incidentDetail_list' %}">{{ incident.id }}</a> {{ incident.subject }}</li>
+    <li><a href="{% url 'incidentDetail-list' incident.pk %}">{{ incident.id }}</a> {{ incident.subject }}</li>
 {% empty %}
     <li>No incidents yet. Thanks :)</li>
 {% endfor %}
