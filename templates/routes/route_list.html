@@ -1,8 +1,22 @@
-<h1>Routes</h1>
-<ul>
-{% for route in object_list %}
-    <li>{{ route.description }} is {{ route.active }}</li>
-{% empty %}
-    <li>No routes yet.</li>
-{% endfor %}
-</ul>
+{% extends "base.html" %}
+{% block content %}
+<h1 class="title">Routes</h1>
+<table class="table">
+    <thead>
+        <th>Description</th>
+        <th>Active</th>
+    </thead>
+    <tbody>
+        {% for route in object_list %}
+            <td>{{ route.description }}</td>
+            {% if route.active %}
+              <td>Active</td>
+            {% else %}
+              <td>Inactive</td>
+            {% endif %}
+            {% empty %}
+            <td><h2 class="subtitle">No routes yet.</h2></td>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
