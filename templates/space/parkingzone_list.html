@@ -1,0 +1,13 @@
+<h1>Parking Zones</h1>
+
+<ul>
+{% for zone in object_list %}
+    <li>
+        {{ zone.zone_type }} |
+        {{ zone.number_of_spaces }} |
+        {{ zone.description }}
+    </li>
+{% empty %}
+    <li>No parking zones yet.</li>
+{% endfor %}
+</ul>

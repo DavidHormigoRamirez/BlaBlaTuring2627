@@ -16,9 +16,12 @@ media
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-.idea/misc.xml,
+.idea/misc.xml
+.idea/modules.xml
 .idea/jsLibraryMappings.xml
-
+.idea/BlaBlaTuring.iml
+.idea/
+uv.lock
 # AWS User-specific
 .idea/**/aws.xml
 
@@ -33,7 +36,7 @@ media
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-
+.idea
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -130,3 +133,12 @@ Control.ca-list
 Control.ca-bundle
 Control.system-ca-bundle
 GitHub.sublime-settings
+
+# Migrations
+/bookings/migrations/
+/routes/migrations/
+/user/migrations/
+/incidents/migrations/
+/gestion_espacios/migrations/
+/.idea
+
