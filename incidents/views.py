@@ -12,4 +12,4 @@ class IncidentsListView(ListView):
 
 class IncidentsDetailView(DetailView):
     model = Incident
-    template_name = "Incidents/incidentDetail_list.html"
+    #template_name = "Incidents/incident_detail.html"
