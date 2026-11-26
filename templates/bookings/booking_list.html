@@ -1,8 +1,8 @@
 <h1>Booking</h1>
 <ul>
-{% for route in object_list %}
-    <li>{{ booking.ReserveHour }} is {{ booking.active }}</li>
+{% for booking in object_list %}
+    <li><a href="./{{ booking.id }}"> Booking {{ booking.id }}</a></li>
 {% empty %}
-    <li>No routes yet.</li>
+    <li>No bookings yet.</li>
 {% endfor %}
 </ul>
