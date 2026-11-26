@@ -1,8 +1,11 @@
-<h1>Incidents</h1>
+{% extends "base.html" %}
+{% block content%}
+<h1 class="title">Incidents</h1>
 <ul>
 {% for incident in object_list %}
-    <li>{{ incident.subject }} | {{ incident.description }} | {{ incident.severity }} | {{ incident.status }} | {{ incident.creation_date }} | {{ incident.finish_date }}</li>
+    <li><a href="{% url 'incident-detail' incident.id %}">{{ incident.id }}</a> - {{ incident.subject }}</li>
 {% empty %}
     <li>No incidents yet. Thanks :)</li>
 {% endfor %}
 </ul>
+{% endblock %}

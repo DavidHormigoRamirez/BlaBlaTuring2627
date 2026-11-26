@@ -8,3 +8,7 @@ def index(request):
 
 class IncidentsListView(ListView):
     model = Incident
+
+class IncidentsDetailView(DetailView):
+    model = Incident
+    #template_name = "Incidents/incident_detail.html"
