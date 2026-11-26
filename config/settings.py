@@ -34,9 +34,9 @@ AUTH_USER_MODEL="user.User"
 INSTALLED_APPS = [
     'bookings.apps.BookingsConfig',
     'incidents.apps.IncidentsConfig',
+    'space.apps.SpaceConfig',
     'routes.apps.RoutesConfig',
     'user.apps.UserConfig',
-    'gestion_espacios.apps.GestionEspaciosConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
