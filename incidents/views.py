@@ -9,7 +9,7 @@ def index(request):
 
 class IncidentsListView(ListView):
     model = Incident
-    template_name = "Incidents/incident_list.html"
+
 class IncidentsDetailView(DetailView):
     model = Incident
     template_name = "Incidents/incidentDetail_list.html"
