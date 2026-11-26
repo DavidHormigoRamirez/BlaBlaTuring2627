@@ -1,0 +1,9 @@
+<h1>Detail User</h1>
+
+ <div>
+     <p><strong>Email:</strong> {{ object.email }}</p>
+     <p><strong>Login:</strong> {{ object.last_login|date:"d/m/Y H:i"|default:"Never" }}</p>
+     <p><strong>Active:</strong> {{ object.is_active|yesno:"Yes,No" }}</p>
+ </div>
+
+<a href="{% url 'user_list' %}">Back</a>
